@@ -3,6 +3,8 @@
 import WorkSlider from "@/components/WorkSlider";
 import Bulb from "@/components/Bulb";
 import Circles from "@/components/Circles";
+import { RxArrowTopRight } from "react-icons/rx";
+import Link from "next/link";
 
 // framer motion
 import { motion } from "framer-motion";
@@ -35,6 +37,19 @@ const Work = () => {
               services to bring your digital projects to life. My expertise
               includes: Web Development,React.js,Next.js.
             </motion.p>
+            <div
+              className="h-max rounded-lg flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer 
+            transition-all duration-300"
+            >
+              <Link href={"/archive"}>
+                <div className="text-lg">
+                  <p className="group-hover:text-accent ">
+                    View Full Project Archive
+                  </p>
+                  <RxArrowTopRight className="text-xl group-hover:text-accent animate-bounce" />
+                </div>
+              </Link>
+            </div>
           </div>
           {/* slider */}
 

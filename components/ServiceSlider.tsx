@@ -1,5 +1,6 @@
 // import swiper react components
 import { Swiper, SwiperSlide } from "swiper/react";
+import Link from "next/link";
 
 // import swiper styles
 import "swiper/css";
@@ -23,30 +24,35 @@ const serviceData = [
   {
     icon: <RxDesktop />,
     title: "Web Development",
+    link: "/services/webdevlopment",
     description:
       "Offering comprehensive web development services, I bring a wealth of experience in creating visually appealing and functional websites.",
   },
   {
     icon: <RxCrop />,
     title: "System Architecture",
+    link: "/services/systemArchitecture",
     description:
       "Specializing in System Design, I excel in crafting scalable architectures to establish the foundation for robust and efficient web application",
   },
   {
     icon: <RxPencil2 />,
     title: "Deployment",
+    link: "https://sudhanshu--sharma.notion.site/Fundamental-Of-System-Design-Structure-86f0b17c6f174a56be8cbbcbf791848d?pvs=4",
     description:
       "I have a successful track record of deploying projects onto servers, secure web communication experience through SSL integration.",
   },
   {
     icon: <RxReader />,
     title: "Commitment to Quality",
+    link: "",
     description:
       "Dedicated to delivering high-quality solutions, integrating industry trends and best practices to exceed client expectations",
   },
   {
     icon: <RxRocket />,
     title: "SEO Optimization",
+    link: "",
     description:
       "Pecializing in SEO to enhance digital project visibility and performance through comprehensive on-page and off-page strategies.",
   },
@@ -78,19 +84,21 @@ const ServiceSlider = () => {
              hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300
             "
             >
-              {/* icons */}
-              <div className="text-4xl text-accent mb-4"> {item.icon}</div>
-              {/* title & desc */}
-              <div className="mb-8">
-                <div className="mb-2 text-lg">{item.title} </div>
-                <div className="max-w-[390px] leading-normal">
-                  {item.description}{" "}
+              <Link href={item.link}>
+                {/* icons */}
+                <div className="text-4xl text-accent mb-4"> {item.icon}</div>
+                {/* title & desc */}
+                <div className="mb-8">
+                  <div className="mb-2 text-lg">{item.title} </div>
+                  <div className="max-w-[390px] leading-normal">
+                    {item.description}
+                  </div>
                 </div>
-              </div>
-              {/* arrow */}
-              <div className="text-3xl">
-                <RxArrowTopRight className="group-hover:rotate-45 group-hover:text-accent transition-all duration-300" />
-              </div>
+                {/* arrow */}
+                <div className="text-3xl">
+                  <RxArrowTopRight className="group-hover:rotate-45 group-hover:text-accent transition-all duration-300" />
+                </div>
+              </Link>
             </div>
           </SwiperSlide>
         );

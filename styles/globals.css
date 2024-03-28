@@ -18,14 +18,18 @@
 .swiper-rtl .swiper-button-prev:after {
   color: #f13024;
 }
+.badge-chip {
+  @apply inline-flex  items-center rounded-md p-2 text-xs font-medium ring-1 ring-inset;
+}
 
 @layer base {
   body {
-    @apply bg-secondary overflow-hidden leading-relaxed;
+    @apply bg-accent overflow-y-auto overflow-x-hidden leading-relaxed;
+    scrollbar-width: thin;
   }
 
   .page {
-    @apply w-full h-screen overflow-hidden;
+    @apply w-full  h-screen overflow-y-auto overflow-x-hidden;
   }
 
   .h1 {
