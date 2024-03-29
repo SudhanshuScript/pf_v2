@@ -1,8 +1,10 @@
 import React from "react";
 import { fadeIn } from "@/variants";
 import { motion } from "framer-motion";
-import { RxArrowTopRight } from "react-icons/rx";
 import Image from "next/image";
+import Link from "next/link";
+import { IoArrowBack } from "react-icons/io5";
+import ImageMagnifier from "@/components/ImageMagnifier";
 
 interface TableDataItem {
   year: number;
@@ -17,15 +19,33 @@ export default function archive() {
       <div className="h-full bg-primary/30 py-32 text-center">
         <div className="container mx-auto h-full  w-full flex-col">
           {/* title */}
-          <motion.h3
-            variants={fadeIn("up", 0.2)}
-            initial="hidden"
-            animate="show"
-            exit="hidden"
-            className="h3 mb-8xl:mb-0 text-2xl "
-          >
-            <span className="text-accent"> System Architecture. </span>
-          </motion.h3>
+          <div className="flex items-center justify-center">
+            <Link href={"/services"}>
+              <motion.h3
+                variants={fadeIn("up", 0.2)}
+                initial="hidden"
+                animate="show"
+                exit="hidden"
+                class="text-2xl"
+              >
+                <div className="flex items-center hover:text-accent justify-center cursor-pointer absolute -mt-3 z-20">
+                  <IoArrowBack size={20} />
+                  <span className="ml-2 text-lg">Back</span>
+                </div>{" "}
+              </motion.h3>
+            </Link>
+            <div className="mx-auto">
+              <motion.h3
+                variants={fadeIn("up", 0.2)}
+                initial="hidden"
+                animate="show"
+                exit="hidden"
+                class="text-2xl h2 text-center"
+              >
+                System <span className="text-accent"> Architecture </span>
+              </motion.h3>
+            </div>
+          </div>
           <div className="flex">
             <motion.div
               variants={fadeIn("up", 0.5)}
@@ -35,11 +55,10 @@ export default function archive() {
               transition={{ duration: 1, ease: "easeInOut" }}
               className="w-full flex justify-center items-center"
             >
-              <Image
+              <ImageMagnifier
                 src={"/design-architecture.png"}
-                width={900}
+                width={600}
                 height={978}
-                alt=""
               />
             </motion.div>{" "}
             <motion.div
@@ -127,11 +146,10 @@ export default function archive() {
             transition={{ duration: 1, ease: "easeInOut" }}
             className="w-full flex justify-center items-center"
           >
-            <Image
+            <ImageMagnifier
               src={"/design-responsibilities.png"}
               width={1200}
               height={978}
-              alt=""
             />
           </motion.div>{" "}
         </div>

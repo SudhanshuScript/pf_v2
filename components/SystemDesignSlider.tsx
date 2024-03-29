@@ -107,12 +107,12 @@ const SystemDesignSlider = () => {
                   {/* name */}
                   <div className="text-lg">{person.projectName}</div>
                   {/* position */}
-                  <div className="text-[15px] mt-2">
+                  <div className="text-[15px] mt-2 animate-bounce">
                     <a
                       href={person.figjamLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-accent hover:underline"
+                      className="text-accent hover:underline "
                     >
                       View System Designs
                     </a>
@@ -120,13 +120,13 @@ const SystemDesignSlider = () => {
                 </div>
               </div>
               {/* quate & message */}
-              <div className="bg-pink-500/10 flex-1 flex flex-col justify-center before:w-[1px] xl:before:bg-white/20 xl:before:absolute xl:before:left-0 xl:before:h-[200px] relative xl:pl-20">
+              <div className="bg-pink-500/10 flex-1 p-7 flex flex-col justify-center before:w-[1px] xl:before:bg-white/20 xl:before:absolute xl:before:left-0 xl:before:h-[200px] relative ">
                 {/* quate icon */}
-                <div className="mb-4">
+                {/* <div className="mb-4">
                   <FaQuoteLeft className="text-4xl xl:text-6xl   mt-2 text-white/20 mx-auto md:mx-0" />
-                </div>
+                </div> */}
                 {/* message */}
-                <div className="xl:text-lg text-center md:text-left mb-2">
+                <div className="xl:text-lg text-center md:text-left">
                   {person.overview}{" "}
                 </div>
               </div>

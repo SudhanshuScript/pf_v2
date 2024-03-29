@@ -43,7 +43,7 @@ const Work = () => {
             >
               <Link href={"/archive"}>
                 <div className="text-lg">
-                  <p className="group-hover:text-accent ">
+                  <p className="group-hover:text-accent">
                     View Full Project Archive
                   </p>
                   <RxArrowTopRight className="text-xl group-hover:text-accent animate-bounce" />

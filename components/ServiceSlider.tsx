@@ -57,7 +57,6 @@ const serviceData = [
       "Pecializing in SEO to enhance digital project visibility and performance through comprehensive on-page and off-page strategies.",
   },
 ];
-
 const ServiceSlider = () => {
   return (
     <Swiper
@@ -95,9 +94,12 @@ const ServiceSlider = () => {
                   </div>
                 </div>
                 {/* arrow */}
-                <div className="text-3xl">
-                  <RxArrowTopRight className="group-hover:rotate-45 group-hover:text-accent transition-all duration-300" />
-                </div>
+                {item.title === "Web Development" ||
+                item.title === "System Architecture" ? (
+                  <div className="text-3xl">
+                    <RxArrowTopRight className="animate-bounce group-hover:text-accent" />
+                  </div>
+                ) : null}
               </Link>
             </div>
           </SwiperSlide>
