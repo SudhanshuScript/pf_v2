@@ -28,7 +28,8 @@ const ProjectDesigns = [
     responsibilities: "Full-stack development, database design",
     overview:
       "PostMyAd, an innovative adtech project, fostering a global advertising community. Emphasizing accessibility, detailed billboard information, precise audience targeting, and more, the platform prioritizes transparency, revenue-sharing, and user-friendly experiences for effective advertising.",
-    figjamLink: "https://rb.gy/nmfhqk",
+    figjamLink:
+      "https://sudhanshu--sharma.notion.site/PostMyAd-19231512f530419e95ada3f6e0176b7f",
     imageUrl: "/PostMyAd.ico",
   },
   {

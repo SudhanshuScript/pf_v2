@@ -28,12 +28,20 @@ const Home = () => {
             className="max-w-sm xl:max-w-xl mx-auto  xl:mx-0   xl:mb-2"
           >
             A seasoned Frontend Developer with 3 years of expertise, I
-            specialize in end-to-end project development, showcasing proficiency
-            in React JS and Next JS. My skills extend to crafting responsive and
-            dynamic user interfaces using HTML, CSS, and JavaScript, backed by a
-            robust command of TypeScript. I excel in designing scalable system
-            architectures and successfully deploying projects onto servers,
-            ensuring secure web communication through SSL integration.
+            specialize in{" "}
+            <span className="text-white  font-normal">
+              {" "}
+              end-to-end project development{" "}
+            </span>
+            , showcasing proficiency in React JS and Next JS. My skills extend
+            to crafting responsive and dynamic user interfaces using HTML, CSS,
+            and JavaScript, backed by a robust command of TypeScript. I excel in
+            designing scalable system architectures and successfully{" "}
+            <span className="text-white  font-normal">
+              deploying projects{" "}
+            </span>{" "}
+            onto servers, ensuring secure web communication through{" "}
+            <span className="text-white  font-normal">SSL integration</span>.
             Collaboration comes naturally to me, enabling effective teamwork
             with cross-functional teams and demonstrating adaptability in
             dynamic environments. Committed to delivering high-quality
@@ -62,7 +70,7 @@ const Home = () => {
         {/* particles */}
         <ParticlesContainer></ParticlesContainer>
         {/* avatar img */}
-        <motion.div
+        {/* <motion.div
           variants={fadeIn("up", 0.5)}
           initial="hidden"
           animate="show"
@@ -71,7 +79,7 @@ const Home = () => {
           className="w-full h-full max-w-[140px] max-h-[280px] absolute lg:bottom-0 rounded-2xl lg:right-[21%]"
         >
           <Avatar />
-        </motion.div>
+        </motion.div> */}
       </div>
     </div>
   );

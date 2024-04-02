@@ -1,25 +1,17 @@
 import React from "react";
 import { fadeIn } from "@/variants";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import Link from "next/link";
 import { IoArrowBack } from "react-icons/io5";
 import ImageMagnifier from "@/components/ImageMagnifier";
 
-interface TableDataItem {
-  year: number;
-  project: string;
-  domain: string;
-  builtWith: string;
-  link: string;
-}
-export default function archive() {
+const systemArchitecture = () => {
   return (
     <>
-      <div className="h-full bg-primary/30 py-32 text-center">
-        <div className="container mx-auto h-full  w-full flex-col">
+      <div className="h-full bg-primary/30 overflow-y-scroll py-32 text-center">
+        <div className="container mx-auto h-max    w-full flex-col">
           {/* title */}
-          <div className="flex items-center justify-center">
+          <div className="flex items-center  justify-center relative">
             <Link href={"/services"}>
               <motion.h3
                 variants={fadeIn("up", 0.2)}
@@ -46,7 +38,7 @@ export default function archive() {
               </motion.h3>
             </div>
           </div>
-          <div className="flex">
+          <div className="flex ">
             <motion.div
               variants={fadeIn("up", 0.5)}
               initial="hidden"
@@ -58,7 +50,7 @@ export default function archive() {
               <ImageMagnifier
                 src={"/design-architecture.png"}
                 width={600}
-                height={978}
+                height={678}
               />
             </motion.div>{" "}
             <motion.div
@@ -78,31 +70,28 @@ export default function archive() {
                     <li className="mb-4 ml-6">
                       <h2 className="text-left font-semibold">Requirement</h2>
                       <p className="text-left">
-                        Collaborate with stakeholders to understand and analyze
-                        project needs and goals from a frontend perspective.
-                        This involves gathering requirements related to user
-                        interface design, functionality, and user experience.
+                        Understanding and documenting the needs and goals of a
+                        project, including features, functionalities, and user
+                        expectations, to guide the development process
+                        effectively.
                       </p>
                     </li>
                     <li className="mb-4 ml-6">
                       <h2 className="text-left font-semibold">Scoping</h2>
                       <p className="text-left">
-                        Define the frontend-specific boundaries, constraints,
-                        and objectives of the project. This includes determining
-                        the scope of frontend development tasks, setting
-                        priorities, and establishing timelines for frontend
-                        deliverables.
+                        Defining the boundaries and limitations of a project,
+                        including its objectives, deliverables, timelines, and
+                        resources, to ensure a clear understanding of what will
+                        be accomplished.
                       </p>
                     </li>
                     <li className="mb-4 ml-6">
                       <h2 className="text-left font-semibold">Tech Choices</h2>
                       <p className="text-left">
-                        Evaluate frontend technologies and tools based on their
-                        compatibility with project requirements and constraints.
-                        This involves selecting frameworks, libraries, and
-                        development tools that best support the frontend
-                        architecture and meet performance, scalability, and
-                        browser compatibility requirements.
+                        Selecting appropriate technologies, frameworks, and
+                        libraries based on project requirements, team expertise,
+                        scalability, and maintainability, to build robust and
+                        efficient solutions.
                       </p>
                     </li>
                     <li className="mb-4 ml-6">
@@ -110,11 +99,10 @@ export default function archive() {
                         Component Architecture
                       </h2>
                       <p className="text-left">
-                        Design the frontend system structure, including the
-                        organization of components, modules, and their
-                        interactions. This entails creating a modular and
-                        reusable component architecture that promotes code
-                        reusability, scalability, and maintainability.
+                        esigning the structure and organization of frontend
+                        components, including their hierarchy, relationships,
+                        and interactions, to facilitate code reuse, modularity,
+                        and maintainability.
                       </p>
                     </li>{" "}
                     <li className="mb-4 ml-6">
@@ -122,15 +110,10 @@ export default function archive() {
                         Data API & Implement
                       </h2>
                       <p className="text-left">
-                        Develop frontend data access interfaces to interact with
-                        backend systems and implement them within the chosen
-                        frontend architecture. This involves designing and
-                        implementing data fetching, manipulation, and
-                        integration mechanisms using technologies such as
-                        RESTful APIs, GraphQL, or WebSocket connections. The
-                        goal is to ensure seamless data exchange between the
-                        frontend and backend while maintaining a responsive and
-                        interactive user experience.
+                        t: Integrating data sources and APIs into the frontend
+                        application, including fetching, processing, and
+                        displaying data, to provide dynamic and interactive user
+                        experiences.
                       </p>
                     </li>
                   </ol>
@@ -144,16 +127,17 @@ export default function archive() {
             animate="show"
             exit="hidden"
             transition={{ duration: 1, ease: "easeInOut" }}
-            className="w-full flex justify-center items-center"
+            className="w-full  flex justify-center items-center"
           >
             <ImageMagnifier
               src={"/design-responsibilities.png"}
               width={1200}
-              height={978}
+              height={678}
             />
           </motion.div>{" "}
         </div>
       </div>
     </>
   );
-}
+};
+export default systemArchitecture;

@@ -26,37 +26,38 @@ const serviceData = [
     title: "Web Development",
     link: "/services/webdevlopment",
     description:
-      "Offering comprehensive web development services, I bring a wealth of experience in creating visually appealing and functional websites.",
+      "Offering comprehensive web solutions, crafting visually appealing websites with rich experience.",
   },
   {
     icon: <RxCrop />,
     title: "System Architecture",
     link: "/services/systemArchitecture",
     description:
-      "Specializing in System Design, I excel in crafting scalable architectures to establish the foundation for robust and efficient web application",
+      "Specializing in scalable architectures, creating efficient application foundations to ensure seamless performance.",
   },
   {
     icon: <RxPencil2 />,
     title: "Deployment",
     link: "https://sudhanshu--sharma.notion.site/Fundamental-Of-System-Design-Structure-86f0b17c6f174a56be8cbbcbf791848d?pvs=4",
     description:
-      "I have a successful track record of deploying projects onto servers, secure web communication experience through SSL integration.",
+      "Demonstrated success in project deployment, ensuring secure communication through SSL integration.",
   },
   {
     icon: <RxReader />,
     title: "Commitment to Quality",
     link: "",
     description:
-      "Dedicated to delivering high-quality solutions, integrating industry trends and best practices to exceed client expectations",
+      "Dedicated to delivering high-quality solutions by integrating industry best practices and rigorous testing.",
   },
   {
     icon: <RxRocket />,
     title: "SEO Optimization",
     link: "",
     description:
-      "Pecializing in SEO to enhance digital project visibility and performance through comprehensive on-page and off-page strategies.",
+      "Specializing in SEO strategies to enhance project visibility and maximize online presence.",
   },
 ];
+
 const ServiceSlider = () => {
   return (
     <Swiper
@@ -73,13 +74,13 @@ const ServiceSlider = () => {
       freeMode={true}
       pagination={{ clickable: true }}
       modules={[FreeMode, Pagination]}
-      className="h-[240px] sm:h-[380px]"
+      className="h-[30px] sm:h-[370px]"
     >
       {serviceData.map((item, index) => {
         return (
           <SwiperSlide key={index}>
             <div
-              className="bg-[rgba(65,47,123,0.15)] h-max rounded-lg px-6 py-8 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer 
+              className="bg-[rgba(65,47,123,0.15)] h-[310px] mt-3 rounded-lg px-4  py-6 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer 
              hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300
             "
             >

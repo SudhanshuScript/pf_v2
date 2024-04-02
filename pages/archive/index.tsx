@@ -2,6 +2,8 @@ import React from "react";
 import { fadeIn } from "@/variants";
 import { motion } from "framer-motion";
 import { RxArrowTopRight } from "react-icons/rx";
+import { IoArrowBack } from "react-icons/io5";
+import Link from "next/link";
 
 interface TableDataItem {
   year: number;
@@ -10,100 +12,119 @@ interface TableDataItem {
   builtWith: string;
   link: string;
 }
-export default function archive() {
+const archive = () => {
   const tableData: TableDataItem[] = [
+    {
+      year: 2024,
+      project: "Remote Health Monitoring",
+      domain: "IoT in Healthcare",
+      builtWith: "Next.js TypeScript Material-Ui Next-Auth",
+      link: "https://example.com",
+    },
     {
       year: 2023,
       project: "Brainstorm International LMS",
       domain: "Ed-Tech",
-      builtWith: "Next.js TypeScript Material-Ui",
-      link: "https://example.com",
+      builtWith: "Next.js TypeScript Material-Ui Next-Auth",
+      link: "https://admin.brainstorminternational.co.in/login",
     },
     {
       year: 2023,
       project: "Shipment Tracking & Monitoring",
       domain: "IoT in Logistics",
-      builtWith: "Next.js TypeScript Material-Ui",
-      link: "https://example.com",
+      builtWith: "ReactJS Material-Ui GoogleMaps",
+      link: "http://shipment.psiborg.io/auth/signIn",
     },
     {
       year: 2023,
       project: "PostMyAd",
       domain: "Ad-Tech",
-      builtWith: "Next.js TypeScript Material-Ui",
-      link: "https://example.com",
+      builtWith: "ReactJS Material-Ui Socket.io Pubnub",
+      link: "https://admin.postmyad.ai/signIn",
     },
     {
-      year: 2023,
-      project: "IAF - Energy Monitoring System",
-      domain: "IoT in Energy & Utilities",
-      builtWith: "Next.js TypeScript Material-Ui",
-      link: "https://example.com",
-    },
-    {
-      year: 2023,
-      project: "PolicyWings",
-      domain: "Insurance",
-      builtWith: "Next.js TypeScript Material-Ui",
-      link: "https://example.com",
-    },
-    {
-      year: 2023,
+      year: 2022,
       project: "Smart Home System",
       domain: "IoT in Home",
-      builtWith: "Next.js TypeScript Material-Ui",
-      link: "https://example.com",
+      builtWith: "ReactJS Material-Ui",
+      link: "http://smarthome.psiborg.io/",
     },
     {
-      year: 2023,
+      year: 2022,
       project: "Mckey - Game Key market",
       domain: "E-Commerce",
-      builtWith: "Next.js TypeScript Material-Ui",
+      builtWith: "ReactJS Material-Ui OAuth",
+      link: "https://mckey.io/",
+    },
+    {
+      year: 2022,
+      project: "IAF - Energy Monitoring System",
+      domain: "IoT in Energy & Utilities",
+      builtWith: "ReactJS Material-Ui Socket.io",
+      link: "https://example.com",
+    },
+
+    {
+      year: 2022,
+      project: "PolicyWings",
+      domain: "Insurance",
+      builtWith: "ReactJS Material-Ui",
       link: "https://example.com",
     },
     {
-      year: 2023,
+      year: 2022,
       project: "Honda - Energy Monitoring",
       domain: "IoT in Energy",
-      builtWith: "Next.js TypeScript Material-Ui",
+      builtWith: "ReactJS Material-Ui Pubnub",
       link: "https://example.com",
     },
     {
-      year: 2023,
-      project: "Remote Health Monitoring",
-      domain: "IoT in Healthcare",
-      builtWith: "Next.js TypeScript Material-Ui",
-      link: "https://example.com",
-    },
-    {
-      year: 2023,
-      project: "Zoommer Play LMS",
-      domain: "Ed-Tech",
-      builtWith: "Next.js TypeScript Material-Ui",
-      link: "https://example.com",
-    },
-    {
-      year: 2023,
+      year: 2021,
       project: "Solar Monitoring",
       domain: "IoT in Energy",
-      builtWith: "Next.js TypeScript Material-Ui",
+      builtWith: "ReactJS Material-Ui",
       link: "https://example.com",
+    },
+    {
+      year: 2021,
+      project: "Zoommer Play LMS",
+      domain: "Ed-Tech",
+      builtWith: "ReactJS Material-Ui",
+      link: "http://www.zoommer.co.in/auth/signin",
     },
   ];
   return (
     <>
-      <div className="h-full bg-primary/30 py-32 text-center">
+      <div className="h-full bg-primary/30 py-32 text-center overflow-y-auto">
         <div className="container mx-auto h-full  w-full flex-col">
           {/* title */}
-          <motion.h3
-            variants={fadeIn("up", 0.2)}
-            initial="hidden"
-            animate="show"
-            exit="hidden"
-            className="h3 mb-8xl:mb-0 text-2xl"
-          >
-            All <span className="text-accent"> Projects. </span>
-          </motion.h3>
+          <div className="flex items-center justify-center relative">
+            <Link href={"/work"}>
+              <motion.h3
+                variants={fadeIn("up", 0.2)}
+                initial="hidden"
+                animate="show"
+                exit="hidden"
+                class="text-2xl"
+              >
+                <div className="flex items-center hover:text-accent justify-center cursor-pointer absolute -mt-3 z-20">
+                  <IoArrowBack size={20} />
+                  <span className="ml-2 text-lg">Back</span>
+                </div>
+              </motion.h3>
+            </Link>
+            <div className="mx-auto">
+              <motion.h3
+                variants={fadeIn("up", 0.2)}
+                initial="hidden"
+                animate="show"
+                exit="hidden"
+                className="h3 mb-8xl:mb-0 text-2xl text-center"
+              >
+                All <span className="text-accent"> Projects. </span>
+              </motion.h3>{" "}
+            </div>{" "}
+          </div>
           <div className="flex flex-wrap  mt-5  mb-5">
             <div className="w-full max-w-full px-3 mb-6 mx-auto">
               <div className="relative flex-[1_auto] flex flex-col break-words min-w-0 bg-clip-border rounded-[.95rem] bg-blue">
@@ -166,10 +187,11 @@ export default function archive() {
                               <td>
                                 <a
                                   href={data.link}
+                                  target="_blank"
                                   className="text-gray-400  hover:underline hover:text-accent"
                                 >
                                   <span className="inline-flex">
-                                    {data.link}
+                                    View
                                     <RxArrowTopRight className="group-hover:rotate-45   text-xl group-hover:text-accent transition-all  duration-300" />
                                   </span>
                                 </a>
@@ -188,4 +210,5 @@ export default function archive() {
       </div>
     </>
   );
-}
+};
+export default archive;

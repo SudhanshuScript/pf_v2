@@ -5,13 +5,13 @@ import ImageMagnifier from "@/components/ImageMagnifier";
 import { IoArrowBack } from "react-icons/io5";
 import Link from "next/link";
 
-export default function archive() {
+const webdevelopment = () => {
   return (
     <>
-      <div className="h-full bg-primary/30 py-32">
+      <div className="h-full  overflow-y-scroll bg-primary/30 py-32">
         <div className="container mx-auto h-full  w-full flex-col">
           {/* title */}
-          <div className="flex items-center justify-center">
+          <div className="flex items-center  justify-center relative">
             <Link href={"/services"}>
               <motion.h3
                 variants={fadeIn("up", 0.2)}
@@ -20,7 +20,7 @@ export default function archive() {
                 exit="hidden"
                 class="text-2xl"
               >
-                <div className="flex items-center hover:text-accent justify-center cursor-pointer absolute -mt-3 z-20">
+                <div className="flex items-center hover:text-accent justify-center cursor-pointer absolute -mt-4 z-20">
                   <IoArrowBack size={20} />
                   <span className="ml-2 text-lg">Back</span>
                 </div>{" "}
@@ -64,90 +64,84 @@ export default function archive() {
                 </h1>
                 <div className="flex justify-between">
                   <ol className="list-decimal pl-4">
-                    <li className="mb-4 ml-6">
+                    <li className="mb-4">
                       <h2 className="text-left font-semibold">
                         Network Communication Techniques
                       </h2>
                       <p className="text-left">
-                        This covers how your React application communicates with
-                        servers or APIs. It's essential for fetching data,
-                        sending requests, and handling responses asynchronously.
+                        Understanding various methods and protocols for
+                        communication between client and server, including HTTP,
+                        WebSockets, and REST APIs.
                       </p>
                     </li>
-                    <li className="mb-4 ml-6">
+                    <li className="mb-4">
                       <h2 className="text-left font-semibold">Security</h2>
                       <p className="text-left">
-                        Security is paramount in web development. React
-                        applications should be designed with security in mind to
-                        protect against common vulnerabilities like XSS
-                        (Cross-Site Scripting), CSRF (Cross-Site Request
-                        Forgery), and others.
+                        Implementing measures to protect against threats such as
+                        XSS (Cross-Site Scripting), CSRF (Cross-Site Request
+                        Forgery), and ensuring data confidentiality, integrity,
+                        and availability.
                       </p>
                     </li>
-                    <li className="mb-4 ml-6">
+                    <li className="mb-4">
                       <h2 className="text-left font-semibold">Performance</h2>
                       <p className="text-left">
-                        React applications should be optimized for performance
-                        to ensure fast loading times and smooth user
-                        experiences. This includes techniques like code
-                        splitting, lazy loading, minimizing bundle size, and
-                        optimizing rendering performance.
+                        Optimizing website or application speed and
+                        responsiveness through techniques like code
+                        minification, image optimization, lazy loading, and
+                        efficient resource utilization.
                       </p>
                     </li>
-                    <li className="mb-4 ml-6">
+                    <li className="mb-4">
                       <h2 className="text-left font-semibold">
                         Caching/Database
                       </h2>
                       <p className="text-left">
-                        Caching and database management are crucial for storing
-                        and retrieving application data efficiently. This can
-                        involve client-side caching, server-side caching, or
-                        integrating with databases for persistent data storage.
+                        Utilizing caching mechanisms and efficient database
+                        queries to enhance performance by reducing server load
+                        and response times.
                       </p>
                     </li>
                   </ol>
                   <ol className="list-decimal" start={5}>
-                    <li className="mb-4 ml-6">
+                    <li className="mb-4 ml-12">
                       <h2 className="text-left font-semibold">
                         Offline Support
                       </h2>
                       <p className="text-left">
-                        Providing offline support enhances user experience by
-                        allowing the application to function even when the user
-                        is offline or has a poor internet connection. Techniques
-                        like caching data, using service workers, and
-                        implementing offline storage can help achieve this.
+                        Implementing features that allow users to access content
+                        or perform tasks even when they are offline, utilizing
+                        technologies like Service Workers and IndexedDB.
                       </p>
                     </li>
-                    <li className="mb-4 ml-6">
+                    <li className="mb-4 ml-12">
                       <h2 className="text-left font-semibold">Accessibility</h2>
                       <p className="text-left">
-                        Accessibility ensures that your React application is
-                        usable by everyone, including users with disabilities.
-                        This involves adhering to accessibility standards, using
-                        semantic HTML, providing alternative text for images,
-                        and ensuring keyboard navigation.
+                        Ensuring that web content is accessible to people with
+                        disabilities by adhering to WCAG (Web Content
+                        Accessibility Guidelines) standards and implementing
+                        features such as keyboard navigation, screen reader
+                        compatibility, and semantic HTML.
                       </p>
                     </li>
-                    <li className="mb-4 ml-6">
+                    <li className="mb-4 ml-12">
                       <h2 className="text-left font-semibold">
                         Logging and Monitoring
                       </h2>
                       <p className="text-left">
-                        Logging and monitoring are essential for tracking
-                        application behavior, identifying errors, and monitoring
-                        performance metrics. Logging helps in debugging issues,
-                        while monitoring allows you to keep track of application
-                        health and performance in real-time.
+                        Implementing logging mechanisms to track errors, user
+                        interactions, and system events for troubleshooting and
+                        performance monitoring purposes.
                       </p>
                     </li>{" "}
-                    <li className="mb-4 ml-6">
+                    <li className="mb-4 ml-12">
                       <h2 className="text-left font-semibold">Testing</h2>
                       <p className="text-left">
-                        Testing ensures the reliability and correctness of your
-                        React application. It involves writing unit tests,
-                        integration tests, and end-to-end tests to cover
-                        different aspects of your application's functionality.
+                        Implementing various testing methodologies like unit
+                        testing, integration testing, and end-to-end testing to
+                        ensure the quality and reliability of the codebase, as
+                        well as adherence to functional requirements and
+                        specifications.
                       </p>
                     </li>
                   </ol>
@@ -257,4 +251,5 @@ export default function archive() {
       </div>
     </>
   );
-}
+};
+export default webdevelopment;

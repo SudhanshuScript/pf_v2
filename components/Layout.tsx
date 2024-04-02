@@ -1,5 +1,4 @@
 import { Sora } from "next/font/google";
-import ParticlesContainer from "@/components/ParticlesContainer";
 
 const sora = Sora({
   subsets: ["latin"],
@@ -15,7 +14,7 @@ import TopLeftImg from "./TopLeftImg";
 const Layout = ({ children }: any) => {
   return (
     <div
-      className={`page bg-site text-white bg-cover bg-no-repeat ${sora.variable} font-sora relative  `}
+      className={`page bg-site text-white bg-cover  bg-no-repeat ${sora.variable} font-sora relative`}
     >
       <TopLeftImg />
       <Nav />

@@ -54,12 +54,12 @@ const aboutData: Array<AboutDataItem> = [
     title: "awards",
     info: [
       {
-        title: "Innovator of the Year Awards - PsiBorg",
+        title: "Most Goal Achieved of the Year Awards - PsiBorg",
         stage: "2022 - 2023 ",
       },
       {
         title:
-          " 'React Mastery Award' from Tech Altum for Expertise in Life Cycle Methods ",
+          "React Mastery Award from Tech Altum for Expertise in Life Cycle Methods ",
         stage: "2021",
       },
     ],
@@ -104,25 +104,32 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h3"
+            className="h3 mb-2 font-medium"
           >
-            I build pixel-perfect, engaging, and accessible digital experiences.
+            Frontend Developer | Reactjs | Nextjs | Javascript | Typescript
           </motion.h3>
           <motion.p
             variants={fadeIn("right", 0.4)}
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
+            className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-6 px-2  xl:px-0"
           >
-            As an experienced Frontend Developer with a rich 3-year journey in
-            the tech realm, I have finely crafted my expertise in steering
-            projects from inception to completion. My focus lies in leveraging
-            technologies like React JS, Next JS, HTML, CSS, JavaScript, and
-            TypeScript to bring innovative and dynamic web solutions to life.
-            Throughout this dynamic expedition, I have embraced constant growth
-            and evolution, adapting to the ever-changing landscape of
-            technology.
+            In my 3 years of experience as a Frontend Developer in a{" "}
+            <span className="text-white  font-normal">
+              fast-paced IoT startup,{" "}
+            </span>{" "}
+            I've had the opportunity to deploy over 13 projects across diverse
+            domains including IoT,{" "}
+            <span className="text-white  font-normal">
+              Healthcare, Energy, Ed-tech, Ad-tech and E-commerce{" "}
+            </span>{" "}
+            . From the initial idea to the final product, I've been involved in
+            every step of the process. Proficient in React JS, Next JS, HTML,
+            CSS, JavaScript, and TypeScript, I specialize in developing scalable
+            design systems, IoT dashboards, and websites. My comprehensive
+            understanding of the entire product development lifecycle allows me
+            to effectively contribute to every stage of a project.
           </motion.p>
           {/* counteres */}
           <motion.div

@@ -16,13 +16,13 @@ const Work = () => {
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-x-8">
           {/* text */}
-          <div className="text-center flex xl:w-[30vw] flex-col lg:text-left mb-4 xl:mb-0">
+          <div className="text-center flex xl:w-[30vw] flex-col lg:text-left  xl:mb-0">
             <motion.h2
               variants={fadeIn("up", 0.2)}
               initial="hidden"
               animate="show"
               exit={"hidden"}
-              className="h2 xl:mt-12"
+              className="h2 text-4xl"
             >
               My work <span className="text-accent">.</span>
             </motion.h2>
@@ -33,9 +33,14 @@ const Work = () => {
               exit={"hidden"}
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-              Services As a passionate frontend developer, I offer a range of
-              services to bring your digital projects to life. My expertise
-              includes: Web Development,React.js,Next.js.
+              I specialize in crafting websites and dashboards from scratch
+              using React.js, and Next.js. I ensure a seamless user experience
+              and prioritize optimizing speed and responsiveness through various
+              techniques. I have expertise in creating scalable architectures
+              and system design tailored to project requirements. Additionally,
+              I focus on successful deployment on servers Integrating real-time
+              alerts and data updates with code manageability and design
+              standards.
             </motion.p>
             <div
               className="h-max rounded-lg flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer 

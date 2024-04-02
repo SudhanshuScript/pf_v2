@@ -31,25 +31,21 @@ const workSlides = {
         {
           projectName: "PostMyAd Adtech",
           url: "https://admin.postmyad.ai/signIn",
-          title: "title",
           path: "/PostMyAd-admin.png",
         },
         {
           projectName: "Brainstorm International LMS",
           url: "https://admin.brainstorminternational.co.in/login",
-          title: "title",
           path: "/brainstorm-admin.png",
         },
         {
           projectName: "Shipment Tracking System",
           url: "http://shipment.psiborg.io/auth/signIn",
-          title: "title",
           path: "/shipment-admin.png",
         },
         {
           projectName: "DSS (Defence Security Systems)",
           url: "",
-          title: "title",
           path: "/dss-admin.png",
         },
       ],
@@ -59,24 +55,24 @@ const workSlides = {
         {
           projectName: "Adtech User WebApp",
           url: "https://app.postmyad.ai/explore",
-          title: "title",
           path: "/PostMyAd-user.png",
         },
 
         {
-          title: "title",
-          path: "/thumb2.jpg",
+          projectName: "Mckey",
+          path: "/mckey_explore.png",
+          url: "https://mckey.io/",
         },
         {
           projectName: "Smart Home Automation",
           url: "http://smarthome.psiborg.io/",
-          title: "title",
           path: "/Home-Automation.jpg",
         },
 
         {
-          title: "title",
-          path: "/thumb3.jpg",
+          projectName: "Cattle Management System",
+          path: "/albran.png",
+          url: "https://albarn.tech/",
         },
       ],
     },
