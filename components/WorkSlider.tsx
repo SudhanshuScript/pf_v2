@@ -29,50 +29,73 @@ const workSlides = {
     {
       images: [
         {
-          projectName: "PostMyAd Adtech",
-          url: "https://admin.postmyad.ai/signIn",
-          path: "/PostMyAd-admin.png",
+          projectName: "Adtech User WebApp",
+          url: "https://app.postmyad.ai/explore",
+          path: "/PostMyAd-user.png",
         },
+        {
+          projectName: "Mckey",
+          path: "/mckey_explore.png",
+          url: "https://mckey.io/",
+        },
+
         {
           projectName: "Brainstorm International LMS",
           url: "https://admin.brainstorminternational.co.in/login",
           path: "/brainstorm-admin.png",
         },
         {
-          projectName: "Shipment Tracking System",
-          url: "http://shipment.psiborg.io/auth/signIn",
-          path: "/shipment-admin.png",
-        },
-        {
-          projectName: "DSS (Defence Security Systems)",
-          url: "",
-          path: "/dss-admin.png",
+          projectName: "Smart Home Automation",
+          url: "https://smarthome.psiborg.io",
+          path: "/Home-Automation.jpg",
         },
       ],
     },
     {
       images: [
         {
-          projectName: "Adtech User WebApp",
-          url: "https://app.postmyad.ai/explore",
-          path: "/PostMyAd-user.png",
-        },
-
-        {
-          projectName: "Mckey",
-          path: "/mckey_explore.png",
-          url: "https://mckey.io/",
+          projectName: "Shipment Tracking System",
+          url: "http://shipment.psiborg.io/auth/signIn",
+          path: "/shipment-admin.png",
         },
         {
-          projectName: "Smart Home Automation",
-          url: "http://smarthome.psiborg.io/",
-          path: "/Home-Automation.jpg",
+          projectName: "PostMyAd Adtech",
+          url: "https://admin.postmyad.ai/signIn",
+          path: "/PostMyAd-admin.png",
         },
-
+        {
+          projectName: "DSS (Defence Security Systems)",
+          url: "",
+          path: "/dss-admin.png",
+        },
         {
           projectName: "Cattle Management System",
           path: "/albran.png",
           url: "https://albarn.tech/",
+        },
+      ],
+    },
+    {
+      images: [
+        {
+          projectName: "Mckey Admin Panel",
+          url: "https://admin.mckey.io/sign-in",
+          path: "/mckey_admin.png",
+        },
+        {
+          projectName: "Teacher Panel Ed-Tech",
+          url: "https://teacher.brainstorminternational.co.in/",
+          path: "/PostMyAd-admin.png",
+        },
+        {
+          projectName: "Zoommer Play LMS",
+          url: "http://www.zoommer.co.in/auth/signin",
+          path: "/dss-admin.png",
+        },
+        {
+          projectName: "Smart Home Admin-Panel",
+          path: "/albran.png",
+          url: "http://voice-smarthome.psiborg.io/",
         },
       ],
     },

@@ -47,7 +47,7 @@ const archive = () => {
       project: "Smart Home System",
       domain: "IoT in Home",
       builtWith: "ReactJS Material-Ui",
-      link: "http://smarthome.psiborg.io/",
+      link: "https://smarthome.psiborg.io/",
     },
     {
       year: 2022,
