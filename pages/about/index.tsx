@@ -119,13 +119,13 @@ const About = () => {
             <span className="text-white  font-normal">
               fast-paced IoT startup,{" "}
             </span>{" "}
-            I've had the opportunity to deploy over 13 projects across diverse
+            I have had the opportunity to deploy over 13 projects across diverse
             domains including IoT,{" "}
             <span className="text-white  font-normal">
               Healthcare, Energy, Ed-tech, Ad-tech and E-commerce{" "}
             </span>{" "}
-            . From the initial idea to the final product, I've been involved in
-            every step of the process. Proficient in React JS, Next JS, HTML,
+            . From the initial idea to the final product, I have been involved
+            in every step of the process. Proficient in React JS, Next JS, HTML,
             CSS, JavaScript, and TypeScript, I specialize in developing scalable
             design systems, IoT dashboards, and websites. My comprehensive
             understanding of the entire product development lifecycle allows me
@@ -190,9 +190,12 @@ const About = () => {
           className="flex flex-col w-full xl:max-w-[52%] h-[480px]"
         >
           <div className="flex-col  gap-x-4 xl:gap-z-8 mx-auto xl:mx-0 mb-4">
-            {aboutData.map((item: any) => {
+            {aboutData.map((item: any, index: number) => {
               return (
-                <div className="bg-[rgba(65,47,123,0.15)] hover:bg-[rgba(89,65,169,0.15)]  transition-all duration-300 rounded-lg p-4 mt-4">
+                <div
+                  key={index}
+                  className="bg-[rgba(65,47,123,0.15)] hover:bg-[rgba(89,65,169,0.15)]  transition-all duration-300 rounded-lg p-4 mt-4"
+                >
                   <div className="capitalize  xl:text-xl  font-extrabold text-accent">
                     {item.title}
                   </div>
@@ -211,9 +214,9 @@ const About = () => {
                           <div className="font-medium">{item.stage}</div>
                           {/* icons */}
                           <div className="flex gap-x-4">
-                            {item.icons?.map((icon: any) => {
+                            {item.icons?.map((icon: any, index: number) => {
                               return (
-                                <div className="text-2xl ">
+                                <div key={index} className="text-2xl ">
                                   <Image
                                     alt="icon"
                                     src={icon}

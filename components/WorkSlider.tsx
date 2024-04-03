@@ -85,16 +85,16 @@ const workSlides = {
         {
           projectName: "Teacher Panel Ed-Tech",
           url: "https://teacher.brainstorminternational.co.in/",
-          path: "/PostMyAd-admin.png",
+          path: "/Lms-teacher.png",
         },
         {
           projectName: "Zoommer Play LMS",
           url: "http://www.zoommer.co.in/auth/signin",
-          path: "/dss-admin.png",
+          path: "/zoommer.png",
         },
         {
           projectName: "Smart Home Admin-Panel",
-          path: "/albran.png",
+          path: "/cynetix.png",
           url: "http://voice-smarthome.psiborg.io/",
         },
       ],

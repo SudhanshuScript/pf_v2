@@ -19,7 +19,7 @@ const archive = () => {
       project: "Remote Health Monitoring",
       domain: "IoT in Healthcare",
       builtWith: "Next.js TypeScript Material-Ui Next-Auth",
-      link: "https://example.com",
+      link: "https://rb.gy/ha6aat",
     },
     {
       year: 2023,
@@ -61,7 +61,7 @@ const archive = () => {
       project: "IAF - Energy Monitoring System",
       domain: "IoT in Energy & Utilities",
       builtWith: "ReactJS Material-Ui Socket.io",
-      link: "https://example.com",
+      link: "",
     },
 
     {
@@ -69,21 +69,21 @@ const archive = () => {
       project: "PolicyWings",
       domain: "Insurance",
       builtWith: "ReactJS Material-Ui",
-      link: "https://example.com",
+      link: "",
     },
     {
       year: 2022,
       project: "Honda - Energy Monitoring",
       domain: "IoT in Energy",
       builtWith: "ReactJS Material-Ui Pubnub",
-      link: "https://example.com",
+      link: "",
     },
     {
       year: 2021,
       project: "Solar Monitoring",
       domain: "IoT in Energy",
       builtWith: "ReactJS Material-Ui",
-      link: "https://example.com",
+      link: "",
     },
     {
       year: 2021,
@@ -133,7 +133,7 @@ const archive = () => {
                   <div className="px-9 pt-5 flex justify-between items-stretch flex-wrap min-h-[70px] pb-0 bg-transparent">
                     <h3 className="flex flex-col items-start justify-center m-2 ml-0 font-medium text-xl/tight text-dark">
                       <span className="mr-3 font-semibold text-dark">
-                        Here's List of all of my frontend Projects
+                        Here{"'"}s List of all of my frontend Projects
                       </span>
                       <span className="mt-2 font-medium text-secondary-dark text-sm/normal">
                         I have developed all of below project single-handedly
