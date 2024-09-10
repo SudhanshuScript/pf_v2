@@ -34,9 +34,9 @@ const workSlides = {
           path: "/PostMyAd-user.png",
         },
         {
-          projectName: "Mckey",
-          path: "/mckey_explore.png",
-          url: "https://mckey.io/",
+          projectName: "Trulynk (Kids Tracking)",
+          path: "/trulynk.png",
+          url: "https://admin.trulynk.org",
         },
 
         {
@@ -54,18 +54,19 @@ const workSlides = {
     {
       images: [
         {
+          projectName: "EIM (Electric Vehicle)",
+          url: "https://admin.eim.digital/",
+          path: "/EIM-dashboard.png",
+        },
+        {
           projectName: "Shipment Tracking System",
           url: "http://shipment.psiborg.io/auth/signIn",
           path: "/shipment-admin.png",
         },
-        {
-          projectName: "PostMyAd Adtech",
-          url: "https://admin.postmyad.ai/signIn",
-          path: "/PostMyAd-admin.png",
-        },
+
         {
           projectName: "DSS (Defence Security Systems)",
-          url: "",
+          url: "https://sudhanshu--sharma.notion.site/Shipment-Tracking-273f1682d19848e18e1564f9728c4a71",
           path: "/dss-admin.png",
         },
         {
@@ -77,10 +78,15 @@ const workSlides = {
     },
     {
       images: [
+        // {
+        //   projectName: "Mckey Admin Panel",
+        //   url: "https://admin.mckey.io/sign-in",
+        //   path: "/mckey_admin.png",
+        // },
         {
-          projectName: "Mckey Admin Panel",
-          url: "https://admin.mckey.io/sign-in",
-          path: "/mckey_admin.png",
+          projectName: "PostMyAd Adtech",
+          url: "https://admin.postmyad.ai/signIn",
+          path: "/PostMyAd-admin.png",
         },
         {
           projectName: "Teacher Panel Ed-Tech",
@@ -97,6 +103,11 @@ const workSlides = {
           path: "/cynetix.png",
           url: "http://voice-smarthome.psiborg.io/",
         },
+        {
+          projectName: "Mckey",
+          path: "/mckey_explore.png",
+          url: "https://mckey.io/",
+        },
       ],
     },
   ],
@@ -108,7 +119,7 @@ const WorkSlider = () => {
       spaceBetween={10}
       pagination={{ clickable: true }}
       modules={[Pagination]}
-      className="h-[280px] sm:h-[480px]"
+      className="w-full xl:h-[480px] lg:h-[400px] md:h-[300px] sm:h-[350px] h-[280px]"
     >
       {workSlides.slides.map((slide: any, index: number) => {
         return (
@@ -120,16 +131,14 @@ const WorkSlider = () => {
                     className="relative rounded-lg overflow-hidden flex items-center justify-center group"
                     key={index}
                   >
-                    <div
-                      className="flex items-center w-full h-full  justify-center relative overflow-hidden group"
-                      style={{ maxHeight: "210px" }}
-                    >
+                    <div className="flex items-center w-full h-full  xl:max-h-48 md:h-full max-h-36 justify-center relative overflow-hidden group">
                       {/* image */}
                       <Image
                         src={image.path}
                         width={500}
-                        className="w-full h-full"
+                        className="w-full xl:h-full h-32 md:h-full "
                         height={300}
+                        objectFit="cover"
                         alt=""
                       />
                       {/* overlay gradient */}

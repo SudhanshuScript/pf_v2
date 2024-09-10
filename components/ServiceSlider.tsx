@@ -74,7 +74,7 @@ const ServiceSlider = () => {
       freeMode={true}
       pagination={{ clickable: true }}
       modules={[FreeMode, Pagination]}
-      className="h-[30px] sm:h-[370px]"
+      className="w-full h-auto py-4 overflow-x-hidden"
     >
       {serviceData.map((item, index) => {
         return (
@@ -97,7 +97,7 @@ const ServiceSlider = () => {
                 {/* arrow */}
                 {item.title === "Web Development" ||
                 item.title === "System Architecture" ? (
-                  <div className="text-3xl">
+                  <div className="text-3xl hidden xl:flex">
                     <RxArrowTopRight className="animate-bounce group-hover:text-accent" />
                   </div>
                 ) : null}

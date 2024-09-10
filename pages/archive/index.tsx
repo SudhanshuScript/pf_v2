@@ -16,6 +16,20 @@ const archive = () => {
   const tableData: TableDataItem[] = [
     {
       year: 2024,
+      project: "Trulynk",
+      domain: "EIM (Kids Tracking)",
+      builtWith: "Next.js TypeScript Material-Ui GoogleMaps",
+      link: "https://admin.trulynk.org",
+    },
+    {
+      year: 2024,
+      project: "Energy In Motion",
+      domain: "EIM (Electric Vehicle)",
+      builtWith: "Next.js TypeScript Material-Ui Next-Auth",
+      link: "https://admin.eim.digital/",
+    },
+    {
+      year: 2024,
       project: "Remote Health Monitoring",
       domain: "IoT in Healthcare",
       builtWith: "Next.js TypeScript Material-Ui Next-Auth",
@@ -61,7 +75,14 @@ const archive = () => {
       project: "IAF - Energy Monitoring System",
       domain: "IoT in Energy & Utilities",
       builtWith: "ReactJS Material-Ui Socket.io",
-      link: "",
+      link: "https://sudhanshu--sharma.notion.site/Shipment-Tracking-273f1682d19848e18e1564f9728c4a71",
+    },
+    {
+      year: 2021,
+      project: "Zoommer Play LMS",
+      domain: "Ed-Tech",
+      builtWith: "ReactJS Material-Ui",
+      link: "http://www.zoommer.co.in/auth/signin",
     },
 
     {
@@ -84,13 +105,6 @@ const archive = () => {
       domain: "IoT in Energy",
       builtWith: "ReactJS Material-Ui",
       link: "",
-    },
-    {
-      year: 2021,
-      project: "Zoommer Play LMS",
-      domain: "Ed-Tech",
-      builtWith: "ReactJS Material-Ui",
-      link: "http://www.zoommer.co.in/auth/signin",
     },
   ];
   return (

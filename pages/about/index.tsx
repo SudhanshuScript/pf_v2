@@ -85,7 +85,7 @@ const aboutData: Array<AboutDataItem> = [
 
 const About = () => {
   return (
-    <div className="h-full bg-primary/40 py-32 text-center xl:text-left">
+    <div className="h-full  bg-primary/40 py-32  xl:py-28  text-center xl:text-left ">
       <Circles />
       {/* <motion.div
         variants={fadeIn("right", 0.2)}
@@ -187,9 +187,9 @@ const About = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="flex flex-col w-full xl:max-w-[52%] h-[480px]"
+          className="flex flex-col w-full xl:max-w-[52%] xl:h-[480px]"
         >
-          <div className="flex-col  gap-x-4 xl:gap-z-8 mx-auto xl:mx-0 mb-4">
+          <div className="flex-col  gap-x-4 xl:gap-z-8 mx-auto xl:mx-0  ">
             {aboutData.map((item: any, index: number) => {
               return (
                 <div

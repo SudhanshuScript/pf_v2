@@ -8,7 +8,7 @@ import Link from "next/link";
 const webdevelopment = () => {
   return (
     <>
-      <div className="h-full  overflow-y-scroll bg-primary/30 py-32">
+      <div className="h-full   bg-primary/30 py-32 overflow-y-auto">
         <div className="container mx-auto h-full  w-full flex-col">
           {/* title */}
           <div className="flex items-center  justify-center relative">
@@ -20,7 +20,7 @@ const webdevelopment = () => {
                 exit="hidden"
                 class="text-2xl"
               >
-                <div className="flex items-center hover:text-accent justify-center cursor-pointer absolute -mt-4 z-20">
+                <div className="flex items-center hover:text-accent justify-center cursor-pointer absolute xl:-mt-4 z-20">
                   <IoArrowBack size={20} />
                   <span className="ml-2 text-lg">Back</span>
                 </div>{" "}

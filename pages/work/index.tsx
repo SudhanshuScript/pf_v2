@@ -43,7 +43,7 @@ const Work = () => {
               standards.
             </motion.p>
             <div
-              className="h-max rounded-lg flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer 
+              className="h-max  rounded-lg  xl:flex hidden xl:py-0 py-4 sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer 
             transition-all duration-300"
             >
               <Link href={"/archive"}>
