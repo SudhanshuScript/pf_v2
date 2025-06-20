@@ -21,7 +21,7 @@ const Socials = () => {
         <RiLinkedinBoxLine />
       </a>
       <a
-        href="https://github.com/Sudhanshu7300"
+        href="https://github.com/SudhanshuScript"
         target="_blank"
         rel="noopener noreferrer"
         className="hover:text-accent transition-all duration-300"

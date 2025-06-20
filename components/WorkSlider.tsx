@@ -34,20 +34,19 @@ const workSlides = {
           path: "/PostMyAd-user.png",
         },
         {
-          projectName: "Trulynk (Kids Tracking)",
-          path: "/trulynk.png",
-          url: "https://admin.trulynk.org",
+          projectName: "DevChat",
+          path: "/dev-chat.png",
+          url: "https://dev-gpt-lyart.vercel.app/",
         },
-
         {
           projectName: "Brainstorm International LMS",
           url: "https://admin.brainstorminternational.co.in/login",
           path: "/brainstorm-admin.png",
         },
         {
-          projectName: "Smart Home Automation",
-          url: "https://smarthome.psiborg.io",
-          path: "/Home-Automation.jpg",
+          projectName: "Man Power Tracking",
+          url: "https://track.psiborg.io/",
+          path: "/Man_powerTracking.png",
         },
       ],
     },
@@ -63,11 +62,10 @@ const workSlides = {
           url: "http://shipment.psiborg.io/auth/signIn",
           path: "/shipment-admin.png",
         },
-
         {
-          projectName: "DSS (Defence Security Systems)",
-          url: "https://sudhanshu--sharma.notion.site/Shipment-Tracking-273f1682d19848e18e1564f9728c4a71",
-          path: "/dss-admin.png",
+          projectName: "Trulynk (Kids Tracking)",
+          path: "/trulynk.png",
+          url: "https://admin.trulynk.org",
         },
         {
           projectName: "Cattle Management System",
@@ -78,35 +76,25 @@ const workSlides = {
     },
     {
       images: [
-        // {
-        //   projectName: "Mckey Admin Panel",
-        //   url: "https://admin.mckey.io/sign-in",
-        //   path: "/mckey_admin.png",
-        // },
+        {
+          projectName: "SOS Management System ",
+          url: "https://admin.safome.co/auth/signin",
+          path: "/safome-admin.png",
+        },
         {
           projectName: "PostMyAd Adtech",
           url: "https://admin.postmyad.ai/signIn",
           path: "/PostMyAd-admin.png",
         },
         {
+          projectName: "Dashboard Assignment",
+          url: "https://dashboard-assignment-theta.vercel.app/",
+          path: "/dashboard_assignment.png",
+        },
+        {
           projectName: "Teacher Panel Ed-Tech",
           url: "https://teacher.brainstorminternational.co.in/",
           path: "/Lms-teacher.png",
-        },
-        {
-          projectName: "Zoommer Play LMS",
-          url: "http://www.zoommer.co.in/auth/signin",
-          path: "/zoommer.png",
-        },
-        {
-          projectName: "Smart Home Admin-Panel",
-          path: "/cynetix.png",
-          url: "http://voice-smarthome.psiborg.io/",
-        },
-        {
-          projectName: "Mckey",
-          path: "/mckey_explore.png",
-          url: "https://mckey.io/",
         },
       ],
     },

@@ -27,7 +27,7 @@ const Home = () => {
             exit="hidden"
             className="max-w-sm xl:max-w-xl mx-auto  xl:mx-0   xl:mb-2"
           >
-            A seasoned Frontend Developer with 3 years of expertise, I
+            A seasoned Frontend Developer with 4+ years of expertise, I
             specialize in{" "}
             <span className="text-white  font-normal">
               {" "}
