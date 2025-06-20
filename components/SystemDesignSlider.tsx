@@ -1,4 +1,3 @@
-// Project Designs data
 const ProjectDesigns = [
   {
     projectName: "DSS (Defence Security Systems)",
