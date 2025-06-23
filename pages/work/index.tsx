@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
 const Work = () => {
   return (
-    <div className="h-full bg-primary/30 py-36 flex items-center">
+    <div className="relative min-h-[100dvh] w-full bg-primary/30 flex flex-col justify-center pt-28 pb-24 xl:pt-0 xl:pb-0 overflow-hidden">
       <Circles />
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-x-8">

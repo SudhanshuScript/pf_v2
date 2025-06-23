@@ -8,7 +8,7 @@ import Link from "next/link";
 const webdevelopment = () => {
   return (
     <>
-      <div className="h-full   bg-primary/30 py-32 overflow-y-auto">
+      <div className="relative min-h-screen w-full bg-primary/40 pt-28 pb-16 xl:pt-24 xl:pb-0">
         <div className="container mx-auto h-full  w-full flex-col">
           {/* title */}
           <div className="flex items-center  justify-center relative">

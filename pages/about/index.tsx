@@ -115,11 +115,11 @@ const About = () => {
             exit="hidden"
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-6 px-2  xl:px-0"
           >
-            In my 3 years of experience as a Frontend Developer in a{" "}
+            In my 4+ years of experience as a Frontend Developer in a{" "}
             <span className="text-white  font-normal">
               fast-paced IoT startup,{" "}
             </span>{" "}
-            I have had the opportunity to deploy over 13 projects across diverse
+            I have had the opportunity to deploy over 17+ projects across diverse
             domains including IoT,{" "}
             <span className="text-white  font-normal">
               Healthcare, Energy, Ed-tech, Ad-tech and E-commerce{" "}
@@ -143,7 +143,7 @@ const About = () => {
               {/* experience */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <Countup start={0} end={3} duration={5} /> +{" "}
+                  <Countup start={0} end={4} duration={5} /> +{" "}
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Years of experience
@@ -152,7 +152,7 @@ const About = () => {
               {/* clients */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <Countup start={0} end={13} duration={5} /> +{" "}
+                  <Countup start={0} end={15} duration={5} /> +{" "}
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Satisfied clients
@@ -162,7 +162,7 @@ const About = () => {
               {/* Projects */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <Countup start={0} end={13} duration={5} /> +{" "}
+                  <Countup start={0} end={17} duration={5} /> +{" "}
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Finished Project

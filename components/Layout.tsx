@@ -26,14 +26,12 @@ const Layout = ({ children }: any) => {
 
   return (
     <div
-      className={`page bg-site text-white bg-cover overflow-y-auto xl:${
-        shouldHideOverflow ? "overflow-y-auto" : "overflow-hidden"
-      } bg-no-repeat ${sora.variable} font-sora relative`}
+      className={`page h-screen flex flex-col bg-site text-white bg-cover overflow-x-auto bg-no-repeat ${sora.variable} font-sora relative`}
     >
       <TopLeftImg />
       <Nav />
       <Header />
-      <div className="xl:py-0">{children}</div>
+      <main className="flex-1 flex flex-col">{children}</main>
     </div>
   );
 };

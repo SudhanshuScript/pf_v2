@@ -6,7 +6,7 @@ import Avatar from "@/components/Avatar";
 import { fadeIn } from "../variants";
 const Home = () => {
   return (
-    <div className="bg-primary/60    relative py-28 xl:py-3 ">
+  <div className="relative w-full bg-primary/60 h-auto xl:h-screen overflow-auto pt-28 pb-20 xl:pt-0 xl:pb-0">
       {/* text */}
       <div className="w-full h-full  bg-gradient-to-r from-primary/10 via-black/30  to-black/10 ">
         <div className="text-center flex flex-col justify-center xl:pt-20 xl:text-left h-full container mx-auto">
@@ -20,34 +20,21 @@ const Home = () => {
             <span className="text-accent"> Frontend Developer </span>
           </motion.h2>
           {/* Subtitle */}
-          <motion.p
-            variants={fadeIn("down", 0.3)}
-            initial="hidden"
-            animate="show"
-            exit="hidden"
-            className="max-w-sm xl:max-w-xl mx-auto  xl:mx-0   xl:mb-2"
-          >
-            A seasoned Frontend Developer with 4+ years of expertise, I
-            specialize in{" "}
-            <span className="text-white  font-normal">
-              {" "}
-              end-to-end project development{" "}
-            </span>
-            , showcasing proficiency in React JS and Next JS. My skills extend
-            to crafting responsive and dynamic user interfaces using HTML, CSS,
-            and JavaScript, backed by a robust command of TypeScript. I excel in
-            designing scalable system architectures and successfully{" "}
-            <span className="text-white  font-normal">
-              deploying projects{" "}
-            </span>{" "}
-            onto servers, ensuring secure web communication through{" "}
-            <span className="text-white  font-normal">SSL integration</span>.
-            Collaboration comes naturally to me, enabling effective teamwork
-            with cross-functional teams and demonstrating adaptability in
-            dynamic environments. Committed to delivering high-quality
-            solutions, I stay abreast of industry trends and incorporate best
-            practices into my work.
-          </motion.p>
+    <motion.p
+  variants={fadeIn("down", 0.3)}
+  initial="hidden"
+  animate="show"
+  exit="hidden"
+  className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 xl:mb-2"
+>
+  A dedicated <span className="text-white font-normal">Frontend Engineer</span> with over 4+ years of experience, I’ve led and delivered{" "}
+  <span className="text-white font-normal">17+ SaaS-based projects</span> across IoT, AdTech, EdTech, logistics, and tracking domains. I specialize in{" "}
+  <span className="text-white font-normal">React.js</span>, <span className="text-white font-normal">Next.js</span>, and <span className="text-white font-normal">TypeScript</span>, building scalable, performant UIs with modern stacks like Tailwind, MUI, and Chart.js. Skilled in{" "}
+  designing system architectures, I integrate real-time communication (MQTT, WebSocket, TCP) and{" "}
+  <span className="text-white font-normal">secure cloud deployments</span> via Docker, CI/CD, and AWS. I lead cross-functional teams,{" "}
+  mentor junior developers, and use Agile practices and tools like Asana and Notion for smooth delivery. Passionate about intuitive design, secure systems, and impactful web experiences.
+</motion.p>
+
           {/* btn */}
           <div className="flex justify-center xl:hidden  relative">
             <ProjectsBtn />
